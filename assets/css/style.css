@@ -73,7 +73,7 @@ h6 {
   transition: all 0.5s;
   z-index: 997;
   transition: all 0.5s;
-  background: rgba(42, 44, 57, 0.9);
+  background: rgb(82 175 233);
 }
 
 #header.header-transparent {
@@ -81,7 +81,7 @@ h6 {
 }
 
 #header.header-scrolled {
-  background: rgba(42, 44, 57, 0.9);
+  background: rgb(82 175 233);
 }
 
 #header .logo h1 {
@@ -335,7 +335,9 @@ h6 {
   width: 100%;
   overflow: hidden;
   position: relative;
-  background: linear-gradient(0deg, rgb(42, 44, 57) 0%, rgb(51, 54, 74) 100%);
+  background: linear-gradient(0deg, rgb(82 175 233) 0%, rgb(51, 54, 74) 100%);
+  /* linear-gradient(0deg, rgb(42, 44, 57) 0%, rgb(51, 54, 74) 100%); */
+  
   padding: 0;
 }
 
@@ -1521,19 +1523,18 @@ section {
 # Footer
 --------------------------------------------------------------*/
 .footer {
-  background: #14151c;
+  background: rgb(82 175 233);
+   /* #14151c; */
   color: #fff;
   background-size: cover;
   font-size: 14px;
   padding: 80px 0 60px 0;
   position: relative; 
-
-
 }
 
 .footer:before {
   content: "";
-  background: #14151c;
+  background:  rgb(51, 54, 74);
   position: absolute;
   inset: 0;
 }
