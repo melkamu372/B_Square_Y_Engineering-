@@ -1,14 +1,4 @@
-/**
-* Template Name: Selecao
-* Updated: Mar 10 2023 with Bootstrap v5.2.3
-* Template URL: https://bootstrapmade.com/selecao-bootstrap-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 
-/*--------------------------------------------------------------
-# General
---------------------------------------------------------------*/
 body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
@@ -148,7 +138,7 @@ h6 {
   color: #fff;
   white-space: nowrap;
   transition: 0.3s;
-  border-radius: 50px;
+  /* border-radius: 50px; */
 }
 
 .navbar a i,
@@ -1063,11 +1053,12 @@ section {
 .pricing .box {
   padding: 20px;
   background: #fff;
-  text-align: center;
+  text-align: justify;
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.12);
   border-radius: 5px;
   position: relative;
   overflow: hidden;
+  margin:3px;
 }
 
 .pricing h3 {
@@ -1104,7 +1095,7 @@ section {
   padding: 0;
   list-style: none;
   color: #444444;
-  text-align: center;
+  text-align: justify;
   line-height: 20px;
   font-size: 14px;
 }
@@ -1325,65 +1316,56 @@ section {
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
-.contact .info {
-  width: 100%;
-  background: #fff;
+/*--------------------------------------------------------------
+# Contact Section
+--------------------------------------------------------------*/
+.contact .info-item {
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.08);
+  padding: 20px 0 30px 0;
 }
 
-.contact .info i {
-  font-size: 20px;
-  color: #ef6603;
-  float: left;
-  width: 44px;
-  height: 44px;
-  background: #ffecde;
+.contact .info-item i {
   display: flex;
-  justify-content: center;
   align-items: center;
-  border-radius: 50px;
-  transition: all 0.3s ease-in-out;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  font-size: 24px;
+  line-height: 0;
+  color: var(--color-primary);
+  border-radius: 50%;
+  border: 2px dotted #ffd565;
 }
 
-.contact .info h4 {
-  padding: 0 0 0 60px;
-  font-size: 22px;
-  font-weight: 600;
-  margin-bottom: 5px;
-  color: #2a2c39;
+.contact .info-item h3 {
+  font-size: 20px;
+  color: #6c757d;
+  font-weight: 700;
+  margin: 10px 0;
 }
 
-.contact .info p {
-  padding: 0 0 0 60px;
-  margin-bottom: 0;
+.contact .info-item p {
+  padding: 0;
+  line-height: 24px;
   font-size: 14px;
-  color: #555974;
-}
-
-.contact .info .email,
-.contact .info .phone {
-  margin-top: 40px;
-}
-
-.contact .info .email:hover i,
-.contact .info .address:hover i,
-.contact .info .phone:hover i {
-  background: #ef6603;
-  color: #fff;
+  margin-bottom: 0;
 }
 
 .contact .php-email-form {
   width: 100%;
   background: #fff;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.08);
+  padding: 30px;
 }
 
 .contact .php-email-form .form-group {
-  padding-bottom: 8px;
+  padding-bottom: 20px;
 }
 
 .contact .php-email-form .error-message {
   display: none;
   color: #fff;
-  background: #ed3c0d;
+  background: #df1529;
   text-align: left;
   padding: 15px;
   font-weight: 600;
@@ -1396,7 +1378,7 @@ section {
 .contact .php-email-form .sent-message {
   display: none;
   color: #fff;
-  background: #18d26e;
+  background: #059652;
   text-align: center;
   padding: 15px;
   font-weight: 600;
@@ -1416,8 +1398,9 @@ section {
   width: 24px;
   height: 24px;
   margin: 0 10px -6px 0;
-  border: 3px solid #18d26e;
-  border-top-color: #eee;
+  border: 3px solid #059652;
+  border-top-color: #fff;
+  -webkit-animation: animate-loading 1s linear infinite;
   animation: animate-loading 1s linear infinite;
 }
 
@@ -1426,6 +1409,11 @@ section {
   border-radius: 0;
   box-shadow: none;
   font-size: 14px;
+}
+
+.contact .php-email-form input:focus,
+.contact .php-email-form textarea:focus {
+  border-color: var(--color-primary);
 }
 
 .contact .php-email-form input {
@@ -1437,16 +1425,16 @@ section {
 }
 
 .contact .php-email-form button[type=submit] {
-  background: #ef6603;
+  background: var(--color-primary);
   border: 0;
-  padding: 10px 24px;
+  padding: 10px 35px;
   color: #fff;
-  transition: 0.4s;
-  border-radius: 50px;
+    transition: 0.1s;
+  border-radius: 5px;
 }
 
 .contact .php-email-form button[type=submit]:hover {
-  background: #fc8129;
+  background: rgba(254, 185, 0, 0.8);
 }
 
 @keyframes animate-loading {
@@ -1457,6 +1445,20 @@ section {
   100% {
     transform: rotate(360deg);
   }
+}
+
+
+/*--------------------------------------------------------------
+# Map
+--------------------------------------------------------------*/
+.map {
+  padding: 0;
+  margin-bottom: -6px;
+}
+
+.map iframe {
+  width: 100%;
+  height: 380px;
 }
 
 /*--------------------------------------------------------------
@@ -1518,60 +1520,117 @@ section {
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
-#footer {
+.footer {
   background: #14151c;
   color: #fff;
+  background-size: cover;
   font-size: 14px;
-  text-align: center;
-  padding: 30px 0;
+  padding: 80px 0 60px 0;
+  position: relative; 
+
+
 }
 
-#footer h3 {
-  font-size: 36px;
+.footer:before {
+  content: "";
+  background: #14151c;
+  position: absolute;
+  inset: 0;
+}
+
+.footer .footer-content .footer-info {
+  margin-bottom: 30px;
+}
+
+.footer .footer-content .footer-info h3 {
+  font-size: 28px;
+  margin: 0 0 20px 0;
+  padding: 2px 0 2px 0;
+  line-height: 1;
   font-weight: 700;
+  text-transform: uppercase;
+}
+
+.footer .footer-content .footer-info h3 span {
+  color: var(--color-primary);
+}
+
+.footer .footer-content .footer-info p {
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 0;
+  font-family: var(--font-primary);
   color: #fff;
-  position: relative;
-  font-family: "Poppins", sans-serif;
-  padding: 0;
-  margin: 0 0 15px 0;
 }
 
-#footer p {
-  font-size: 15;
-  font-style: italic;
-  padding: 0;
-  margin: 0 0 40px 0;
-}
-
-#footer .social-links {
-  margin: 0 0 40px 0;
-}
-
-#footer .social-links a {
+.footer .footer-content .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: #ef6603;
+  background: rgba(255, 255, 255, 0.1);
   color: #fff;
   line-height: 1;
-  padding: 8px 0;
-  margin-right: 4px;
-  border-radius: 50%;
-  text-align: center;
+  margin-right: 8px;
+  border-radius: 4px;
   width: 36px;
   height: 36px;
-  transition: 0.3s;
+  transition: 0.1s;
 }
 
-#footer .social-links a:hover {
-  background: #bd5102;
-  color: #fff;
+.footer .footer-content .social-links a:hover {
+  background: var(--color-primary);
   text-decoration: none;
 }
 
-#footer .copyright {
-  margin: 0 0 5px 0;
+.footer .footer-content h4 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  position: relative;
+  padding-bottom: 12px;
 }
 
-#footer .credits {
-  font-size: 13px;
+.footer .footer-content .footer-links {
+  margin-bottom: 30px;
 }
+
+.footer .footer-content .footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer .footer-content .footer-links ul li {
+  padding: 8px 0;
+}
+
+.footer .footer-content .footer-links ul li:first-child {
+  padding-top: 0;
+}
+
+.footer .footer-content .footer-links ul a {
+  color: rgba(255, 255, 255, 0.6);
+  transition: 0.1s;
+  display: inline-block;
+  line-height: 1;
+}
+
+.footer .footer-content .footer-links ul a:hover {
+  color: #fff;
+}
+
+.footer .footer-legal .copyright {
+  padding-top: 30px;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.footer .footer-legal .credits {
+  padding-top: 4px;
+  font-size: 13px;
+  color: #fff;
+}
+
+.footer .footer-legal .credits a {
+  color: var(--color-primary);
+}
+
+
