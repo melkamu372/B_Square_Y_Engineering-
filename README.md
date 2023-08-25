@@ -29,7 +29,7 @@
 
 > B Square Y Engineering was established in a year 2018 G.C 
 
-**B Square Y Engineering** is a...
+**B Square Y Engineering** is Established in 2018, is an Ethiopian General Contractor firm specializing in building, road, landscape, electromechanical, and water work constructions, offering pre-construction services and turn-key projects.
 
 ## 🛠 Built With <a name="built-with"></a>
 
