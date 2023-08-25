@@ -25,11 +25,11 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [your_project_name] <a name="about-project"></a>
+# 📖 Welcome to B Square Y Engineering  <a name="about-project"></a>
 
 > B Square Y Engineering was established in a year 2018 G.C 
 
-**[your_project__name]** is a...
+**B Square Y Engineering** is a...
 
 ## 🛠 Built With <a name="built-with"></a>
 
