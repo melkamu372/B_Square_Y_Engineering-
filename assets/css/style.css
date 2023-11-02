@@ -76,9 +76,9 @@ h6 {
   background: rgb(82 175 233);
 }
 
-#header.header-transparent {
+/* #header.header-transparent {
   background: transparent;
-}
+} */
 
 #header.header-scrolled {
   background: rgb(82 175 233);
