@@ -251,3 +251,5 @@
   });
 
 })()
+
+new PureCounter();
