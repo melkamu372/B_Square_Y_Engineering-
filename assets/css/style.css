@@ -1030,7 +1030,12 @@ section {
 .testimonials .testimonials-slider {
   overflow: hidden;
 }
-
+.slide-image{
+  width:50%;
+}
+.slide-client-counters{
+  font-size:40px;color:#ef6603; font-weight: bolder;
+}
 .testimonials .testimonial-item {
   box-sizing: content-box;
   padding: 30px 30px 0 30px;
@@ -1374,59 +1379,69 @@ section {
   bottom: 15px;
 }
 
+
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
-/*--------------------------------------------------------------
-# Contact Section
---------------------------------------------------------------*/
-.contact .info-item {
-  box-shadow: 0 0 25px rgba(0, 0, 0, 0.08);
-  padding: 20px 0 30px 0;
+.contact .info {
+  width: 100%;
+  background: #fff;
 }
 
-.contact .info-item i {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 56px;
-  height: 56px;
-  font-size: 24px;
-  line-height: 0;
-  color: var(--color-primary);
-  border-radius: 50%;
-  border: 2px dotted #ffd565;
-}
-
-.contact .info-item h3 {
+.contact .info i {
   font-size: 20px;
-  color: #6c757d;
-  font-weight: 700;
-  margin: 10px 0;
+  color: #ef6603;
+  float: left;
+  width: 44px;
+  height: 44px;
+  background: #ffecde;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
 }
 
-.contact .info-item p {
-  padding: 0;
-  line-height: 24px;
-  font-size: 14px;
+.contact .info h4 {
+  padding: 0 0 0 60px;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #2a2c39;
+}
+
+.contact .info p {
+  padding: 0 0 0 60px;
   margin-bottom: 0;
+  font-size: 14px;
+  color: #555974;
+}
+
+.contact .info .email,
+.contact .info .phone {
+  margin-top: 40px;
+}
+
+.contact .info .email:hover i,
+.contact .info .address:hover i,
+.contact .info .phone:hover i {
+  background: #ef6603;
+  color: #fff;
 }
 
 .contact .php-email-form {
   width: 100%;
   background: #fff;
-  box-shadow: 0 0 25px rgba(0, 0, 0, 0.08);
-  padding: 30px;
 }
 
 .contact .php-email-form .form-group {
-  padding-bottom: 20px;
+  padding-bottom: 8px;
 }
 
 .contact .php-email-form .error-message {
   display: none;
   color: #fff;
-  background: #df1529;
+  background: #ed3c0d;
   text-align: left;
   padding: 15px;
   font-weight: 600;
@@ -1439,7 +1454,7 @@ section {
 .contact .php-email-form .sent-message {
   display: none;
   color: #fff;
-  background: #059652;
+  background: #18d26e;
   text-align: center;
   padding: 15px;
   font-weight: 600;
@@ -1459,9 +1474,8 @@ section {
   width: 24px;
   height: 24px;
   margin: 0 10px -6px 0;
-  border: 3px solid #059652;
-  border-top-color: #fff;
-  -webkit-animation: animate-loading 1s linear infinite;
+  border: 3px solid #18d26e;
+  border-top-color: #eee;
   animation: animate-loading 1s linear infinite;
 }
 
@@ -1470,11 +1484,6 @@ section {
   border-radius: 0;
   box-shadow: none;
   font-size: 14px;
-}
-
-.contact .php-email-form input:focus,
-.contact .php-email-form textarea:focus {
-  border-color: var(--color-primary);
 }
 
 .contact .php-email-form input {
@@ -1486,16 +1495,16 @@ section {
 }
 
 .contact .php-email-form button[type=submit] {
-  background: var(--color-primary);
+  background: #ef6603;
   border: 0;
-  padding: 10px 35px;
+  padding: 10px 24px;
   color: #fff;
-    transition: 0.1s;
-  border-radius: 5px;
+  transition: 0.4s;
+  border-radius: 50px;
 }
 
 .contact .php-email-form button[type=submit]:hover {
-  background: rgba(254, 185, 0, 0.8);
+  background: #fc8129;
 }
 
 @keyframes animate-loading {
@@ -1507,7 +1516,6 @@ section {
     transform: rotate(360deg);
   }
 }
-
 
 /*--------------------------------------------------------------
 # Map
